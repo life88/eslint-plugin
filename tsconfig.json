@@ -1,0 +1,10 @@
+{
+  "extends": "@life88/typescript-config",
+  "include": ["src"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "noEmit": false
+  }
+}

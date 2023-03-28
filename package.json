@@ -1,0 +1,50 @@
+{
+  "name": "@life88/eslint-plugin",
+  "version": "0.0.1",
+  "description": "Self-use eslint plugin",
+  "keywords": [
+    "eslint",
+    "config",
+    "eslint config"
+  ],
+  "license": "MIT",
+  "author": "life88",
+  "exports": {
+    "./package.json": "./package.json",
+    "./recommended": "./recommended.js",
+    "./react": "./react.js"
+  },
+  "main": "recommended.js",
+  "files": [
+    "package.json",
+    "react.js",
+    "recommended.js"
+  ],
+  "scripts": {
+    "build": "rimraf -rf dist && tsc",
+    "dev": "tsc -w",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "globals": "^13.20.0"
+  },
+  "devDependencies": {
+    "@life88/eslint-plugin": "workspace:*",
+    "@life88/prettier-config": "github:life88/prettier-config",
+    "@life88/typescript-config": "github:life88/typescript-config",
+    "@types/node": "^18.15.10",
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "typescript": "^5.0.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.23.0",
+    "typescript": ">=4"
+  }
+}
